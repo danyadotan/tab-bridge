@@ -1,0 +1,115 @@
+/* TAB Overlay Styles */
+/* Serene Dark theme by default */
+
+.tab-spark {
+    position: fixed;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    border-radius: 20px;
+    background: #151827;
+    box-shadow: 0 10px 40px rgba(0,0,0,.24);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    z-index: 2147483647;
+    border: 1px solid rgba(255,255,255,.08);
+    font-size: 22px;
+    color: #C59CFF;
+    transition: all 0.2s ease;
+}
+
+.tab-spark:hover {
+    filter: brightness(1.1);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.tab-spark-active {
+    background: #1B2030;
+}
+
+.tab-panel {
+    position: fixed;
+    right: 86px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+    max-height: 78vh;
+    overflow: auto;
+    padding: 16px;
+    border-radius: 20px;
+    background: #151827;
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 10px 40px rgba(0,0,0,.24);
+    z-index: 2147483646;
+    font-family: system-ui, -apple-system, sans-serif;
+    color: #EDEBFA;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.tab-panel-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tab-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.tab-panel-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.tab-close {
+    background: transparent;
+    border: none;
+    color: #EDEBFA;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 8px;
+}
+
+.tab-close:hover {
+    background: rgba(255,255,255,.1);
+}
+
+.tab-panel-content p {
+    margin: 8px 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.tab-status {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.tab-chip {
+    display: inline-flex;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: #1B2030;
+    border: 1px solid rgba(255,255,255,.06);
+    font-size: 12px;
+}
+
+kbd {
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.08);
+    font-family: monospace;
+}
